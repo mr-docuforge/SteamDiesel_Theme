@@ -25,10 +25,11 @@ html,body,.Root__main-view,.Root__nav-bar,.Root__now-playing-bar {
   background-color:var(--spice-main)!important;
   background-image:
     linear-gradient(90deg,
-      color-mix(in srgb,var(--spice-main) 76%,transparent) 0%,
-      color-mix(in srgb,var(--spice-main) 52%,transparent) 45%,
-      color-mix(in srgb,var(--spice-main) 36%,transparent) 100%),
-    url('assets/engraving-overlay.svg'),
+      color-mix(in srgb,var(--spice-main) 82%,transparent) 0%,
+      color-mix(in srgb,var(--spice-main) 54%,transparent) 30%,
+      color-mix(in srgb,var(--spice-main) 12%,transparent) 68%,
+      transparent 100%),
+    url('https://raw.githubusercontent.com/vitalijklimenko447-del/SteamDiesel_Theme/main/assets/engraving-overlay.svg'),
     radial-gradient(ellipse at 78% 48%,color-mix(in srgb,var(--sd-accent) 23%,transparent),transparent 55%),
     repeating-linear-gradient(0deg,transparent 0 31px,color-mix(in srgb,var(--sd-accent) 9%,transparent) 32px,transparent 33px),
     repeating-linear-gradient(90deg,transparent 0 31px,color-mix(in srgb,var(--sd-accent) 9%,transparent) 32px,transparent 33px),
