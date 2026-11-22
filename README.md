@@ -16,14 +16,18 @@ This repository is public and already has both required GitHub topics:
 - `spicetify-themes`
 - `spicetify-extensions`
 
-The root `manifest.json` describes two separate Marketplace entries: the theme and the Living Phonograph extension. See the [official publishing guide](https://github.com/spicetify/marketplace/wiki/Publishing-to-Marketplace).
+The root `manifest.json` describes the theme and a standalone Living Phonograph extension entry. The theme also has an `include` URL pointing to the chronograph script hosted on GitHub Pages, so Marketplace can install it together with the theme. A GitHub Actions workflow at `.github/workflows/pages.yml` publishes that asset.
+
+**One-time GitHub Pages setup:** open [Settings → Pages](https://github.com/vitalijklimenko447-del/SteamDiesel_Theme/settings/pages), set Build and deployment → Source to **GitHub Actions**, then open Actions and wait for `Publish Living Phonograph for Marketplace include` to complete successfully. Until Pages is enabled and the workflow succeeds, the `include` URL will not be available.
+
+See the [official publishing guide](https://github.com/spicetify/marketplace/wiki/Publishing-to-Marketplace).
 
 ## Install from Marketplace
 
 After Marketplace indexes the repository:
 1. Find **SteamDiesel — Acoustic Chronograph** under **Themes** and install it.
 2. Choose **Brass** or **RustPatina** in the theme's color-scheme selector.
-3. Install **SteamDiesel Living Phonograph** separately from **Extensions**.
+3. The chronograph is included through the theme's `include` entry. Its standalone card remains available under **Extensions** for separate installation or updating.
 
 The theme and extension are separate Marketplace cards, but the chronograph uses the same color tokens as the selected theme palette. Adding repository topics does not by itself confirm that the cards are already visible; Marketplace must refresh its index.
 
