@@ -18,7 +18,7 @@
 
 Корневой `manifest.json` содержит две карточки: тему и расширение. Карточка темы дополнительно содержит `include` со ссылкой на расширение, опубликованное через GitHub Pages: при установке темы Marketplace сможет подключить Living Phonograph вместе с ней. Для публикации этого файла добавлен workflow GitHub Actions `.github/workflows/pages.yml`.
 
-**Одноразовая настройка GitHub Pages:** откройте [Settings → Pages](https://github.com/vitalijklimenko447-del/SteamDiesel_Theme/settings/pages), в разделе Build and deployment выберите Source: **GitHub Actions**. Затем откройте вкладку Actions и дождитесь успешного выполнения `Publish Living Phonograph for Marketplace include`. Пока Pages не включён и workflow не завершился успешно, ссылка из `include` не будет доступна.
+**Одноразовая настройка GitHub Pages:** откройте [Settings → Pages](https://github.com/mr-docuforge/SteamDiesel_Theme/settings/pages), в разделе Build and deployment выберите Source: **GitHub Actions**. Затем откройте вкладку Actions и дождитесь успешного выполнения `Publish Living Phonograph for Marketplace include`. Пока Pages не включён и workflow не завершился успешно, ссылка из `include` не будет доступна.
 
 После этого, когда Marketplace проиндексирует репозиторий:
 
