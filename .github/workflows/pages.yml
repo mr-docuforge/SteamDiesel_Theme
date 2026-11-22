@@ -1,0 +1,46 @@
+name: Publish Living Phonograph for Marketplace include
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "Extensions/steamdiesel-chronograph.js"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare Pages artifact
+        run: |
+          mkdir -p _site
+          cp Extensions/steamdiesel-chronograph.js _site/steamdiesel-chronograph.js
+          printf '%s\n' '<!doctype html><meta charset="utf-8"><title>SteamDiesel assets</title><p>SteamDiesel MK-V Marketplace extension asset host.</p>' > _site/index.html
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
