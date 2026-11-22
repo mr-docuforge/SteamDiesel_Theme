@@ -18,7 +18,7 @@ This repository is public and already has both required GitHub topics:
 
 The root `manifest.json` describes the theme and a standalone Living Phonograph extension entry. The theme also has an `include` URL pointing to the chronograph script hosted on GitHub Pages, so Marketplace can install it together with the theme. A GitHub Actions workflow at `.github/workflows/pages.yml` publishes that asset.
 
-**One-time GitHub Pages setup:** open [Settings → Pages](https://github.com/vitalijklimenko447-del/SteamDiesel_Theme/settings/pages), set Build and deployment → Source to **GitHub Actions**, then open Actions and wait for `Publish Living Phonograph for Marketplace include` to complete successfully. Until Pages is enabled and the workflow succeeds, the `include` URL will not be available.
+**One-time GitHub Pages setup:** open [Settings → Pages](https://github.com/mr-docuforge/SteamDiesel_Theme/settings/pages), set Build and deployment → Source to **GitHub Actions**, then open Actions and wait for `Publish Living Phonograph for Marketplace include` to complete successfully. Until Pages is enabled and the workflow succeeds, the `include` URL will not be available.
 
 See the [official publishing guide](https://github.com/spicetify/marketplace/wiki/Publishing-to-Marketplace).
 
