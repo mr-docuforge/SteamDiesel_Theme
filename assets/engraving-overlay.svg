@@ -1,18 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
 <defs>
- <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#D6A44E" stroke-opacity=".18" stroke-width=".7"/><path d="M16 0V32M0 16H32" stroke="#D6A44E" stroke-opacity=".055" stroke-width=".45"/></pattern>
- <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F4D28C" stop-opacity=".68"/><stop offset=".55" stop-color="#C28A32" stop-opacity=".4"/><stop offset="1" stop-color="#80531D" stop-opacity=".2"/></linearGradient>
- <radialGradient id="fade"><stop stop-color="#E9B95D" stop-opacity=".18"/><stop offset="1" stop-color="#E9B95D" stop-opacity="0"/></radialGradient>
+ <linearGradient id="field" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#100d09"/><stop offset=".32" stop-color="#21170e"/><stop offset=".53" stop-color="#79552f"/><stop offset=".72" stop-color="#c5a16a"/><stop offset="1" stop-color="#d8bc88"/></linearGradient>
+ <radialGradient id="paperGlow" cx=".72" cy=".42" r=".7"><stop stop-color="#ead3a1" stop-opacity=".72"/><stop offset="1" stop-color="#9b7447" stop-opacity="0"/></radialGradient>
+ <linearGradient id="brass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2d28d"/><stop offset=".45" stop-color="#9e7138"/><stop offset="1" stop-color="#352416"/></linearGradient>
+ <pattern id="paperGrain" width="23" height="23" patternUnits="userSpaceOnUse"><path d="M0 4H23M0 17H23" stroke="#3c2918" stroke-opacity=".09"/><circle cx="6" cy="9" r=".8" fill="#382516" opacity=".14"/><circle cx="18" cy="20" r=".7" fill="#fff0c9" opacity=".24"/></pattern>
+ <pattern id="blueprintGrid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#e6c98e" stroke-opacity=".17" stroke-width="1"/></pattern>
+ <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+ <g id="gear" fill="none" stroke="url(#brass)" stroke-linejoin="round">
+  <circle r="104" stroke-width="18" stroke-dasharray="19 8"/>
+  <circle r="83" stroke-width="3"/><circle r="54" stroke-width="5"/><circle r="17" stroke-width="7"/>
+  <circle r="70" stroke-width="1.5" stroke-dasharray="3 7"/>
+  <path d="M0-104V-84M0 84V104M-104 0H-84M84 0H104M-74-74L-59-59M59 59L74 74M74-74L59-59M-59 59L-74 74" stroke-width="7"/>
+  <path d="M0-54V-17M0 17V54M-54 0H-17M17 0H54" stroke-width="3"/>
+ </g>
+ <g id="rivet"><circle r="7" fill="#17110b" stroke="#d0a35c" stroke-width="2"/><circle cx="-2" cy="-2" r="2.2" fill="#f4d99d"/></g>
 </defs>
-<rect width="1920" height="1080" fill="url(#grid)"/>
-<g stroke="url(#gold)" stroke-linecap="round" stroke-linejoin="round">
- <rect x="26" y="22" width="1868" height="1036" stroke-width="2"/><rect x="39" y="35" width="1842" height="1010" stroke-width=".8" stroke-dasharray="9 7"/>
- <path d="M26 128H92V82H138V22M1894 128H1828V82H1782V22M26 952H92V998H138V1058M1894 952H1828V998H1782V1058" stroke-width="2"/>
- <path d="M112 22V1058M144 22V1058M1776 22V1058M1808 22V1058" stroke-width=".8" stroke-dasharray="3 9" opacity=".7"/>
- <g transform="translate(370 265)"><circle r="206" stroke-width="2.2"/><circle r="184" stroke-width=".9" stroke-dasharray="5 7"/><circle r="145" stroke-width="1.4"/><circle r="92" stroke-width="1.1"/><circle r="30" stroke-width="2"/><circle r="9" fill="#D5A24A" fill-opacity=".35"/><path d="M0-226V-190M0 190V226M-226 0H-190M190 0H226M-160-160L-134-134M134 134L160 160M160-160L134-134M-134 134L-160 160" stroke-width="3"/><path d="M0-206V-188M32-203L29-185M64-196L59-179M96-182L88-166M128-161L117-147M161-128L147-117M182-96L166-88M196-64L179-59M203-32L185-29" stroke-width="2"/></g>
- <g transform="translate(230 720)"><circle r="132" stroke-width="2"/><circle r="105" stroke-width="1"/><circle r="64" stroke-width="1.4"/><circle r="18" stroke-width="2"/><path d="M0-146V-120M0 120V146M-146 0H-120M120 0H146M-103-103L-84-84M84 84L103 103M103-103L84-84M-84 84L-103 103" stroke-width="3"/></g>
- <g transform="translate(690 825)"><circle r="88" stroke-width="2"/><circle r="66" stroke-width="1"/><circle r="24" stroke-width="1.6"/><path d="M0-98V-80M0 80V98M-98 0H-80M80 0H98" stroke-width="3"/></g>
- <g transform="translate(1510 510)"><circle r="390" stroke-width="2.2" stroke-dasharray="860 22 260 22"/><circle r="360" stroke-width="1" stroke-dasharray="4 8"/><circle r="300" stroke-width="1.4"/><circle r="14" stroke-width="2"/><path d="M0-410V-380M102-397L95-369M202-357L188-332M290-290L269-269M357-202L332-188M397-102L369-95M410 0H380M397 102L369 95M357 202L332 188" stroke-width="3"/></g>
- <path d="M860 100H1290M860 118H1170M980 960H1430M1000 980H1320M830 140V940M850 140V940M1650 120V940M1670 120V940" stroke-width="1" opacity=".65" stroke-dasharray="4 10"/>
- <g fill="#E2B75F" stroke="none" opacity=".48"><circle cx="116" cy="206" r="4"/><circle cx="566" cy="150" r="3"/><circle cx="740" cy="570" r="3"/><circle cx="1300" cy="250" r="4"/><circle cx="1750" cy="820" r="3"/><circle cx="1580" cy="970" r="2.5"/></g>
-</g><circle cx="370" cy="265" r="310" fill="url(#fade)"/></svg>
+<rect width="1600" height="900" fill="url(#field)"/><rect width="1600" height="900" fill="url(#paperGlow)"/><rect width="1600" height="900" fill="url(#paperGrain)"/>
+<path d="M0 0H490L420 95 500 175 390 270 475 365 360 470 455 560 345 670 430 765 350 900H0Z" fill="#0d0b09" opacity=".96"/>
+<path d="M0 0H490L420 95 500 175 390 270 475 365 360 470 455 560 345 670 430 765 350 900" fill="none" stroke="#b18445" stroke-width="9" opacity=".8"/>
+<rect width="1600" height="900" fill="url(#blueprintGrid)" opacity=".7"/>
+<g opacity=".86">
+ <use href="#gear" transform="translate(185 150) scale(1.12)"/>
+ <use href="#gear" transform="translate(410 320) scale(.62)"/>
+ <use href="#gear" transform="translate(170 510) scale(.78)"/>
+ <use href="#gear" transform="translate(410 735) scale(1.02)"/>
+ <use href="#gear" transform="translate(80 835) scale(.38)"/>
+</g>
+<g fill="none" stroke="#50371f" opacity=".82">
+ <circle cx="1120" cy="250" r="220" stroke-width="8"/><circle cx="1120" cy="250" r="198" stroke-width="2" stroke-dasharray="3 9"/><circle cx="1120" cy="250" r="168" stroke-width="3"/>
+ <circle cx="1425" cy="745" r="178" stroke-width="7"/><circle cx="1425" cy="745" r="151" stroke-width="2" stroke-dasharray="4 10"/>
+ <path d="M1120 12V75M1120 425V488M882 250H945M1295 250H1358M1425 550V590M1425 900V940M1230 745H1270M1580 745H1620" stroke-width="4"/>
+</g>
+<g stroke="#3d2b1a" fill="none" opacity=".72">
+ <path d="M720 515H1515M720 540H1450M720 565H1380M720 820H1510M720 845H1320" stroke-width="2"/>
+ <path d="M740 500V865M770 500V865M1490 500V865" stroke-width="1" stroke-dasharray="4 8"/>
+ <path d="M820 610h250v145H820zM840 630h210M840 650h160" stroke-width="2"/>
+</g>
+<g fill="#3a2818" font-family="monospace" letter-spacing="4" opacity=".8">
+ <text x="730" y="470" font-size="23">STEAMDIESEL // MK-V</text>
+ <text x="730" y="785" font-size="16">ACOUSTIC CHRONOGRAPH  /  INSTRUMENT No. 014</text>
+ <text x="730" y="880" font-size="13">MECHANICAL SOUND SYSTEM • CALIBRATION PLATE</text>
+</g>
+<g fill="none" stroke="#f0d5a0" opacity=".5"><rect x="22" y="22" width="1556" height="856" stroke-width="2"/><rect x="34" y="34" width="1532" height="832" stroke-width="1" stroke-dasharray="8 7"/><path d="M570 30V870M590 30V870" stroke-width="1"/><circle cx="1120" cy="250" r="242" stroke-width="1" stroke-dasharray="2 13"/></g>
+<g><use href="#rivet" transform="translate(34 34)"/><use href="#rivet" transform="translate(1566 34)"/><use href="#rivet" transform="translate(34 866)"/><use href="#rivet" transform="translate(1566 866)"/></g>
+</svg>
