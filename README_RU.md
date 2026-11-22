@@ -16,12 +16,15 @@
 - `spicetify-themes`
 - `spicetify-extensions`
 
-Корневой `manifest.json` содержит две отдельные карточки: тему и расширение. После индексации репозитория Marketplace:
+Корневой `manifest.json` содержит две карточки: тему и расширение. Карточка темы дополнительно содержит `include` со ссылкой на расширение, опубликованное через GitHub Pages: при установке темы Marketplace сможет подключить Living Phonograph вместе с ней. Для публикации этого файла добавлен workflow GitHub Actions `.github/workflows/pages.yml`.
+
+**Одноразовая настройка GitHub Pages:** откройте [Settings → Pages](https://github.com/vitalijklimenko447-del/SteamDiesel_Theme/settings/pages), в разделе Build and deployment выберите Source: **GitHub Actions**. Затем откройте вкладку Actions и дождитесь успешного выполнения `Publish Living Phonograph for Marketplace include`. Пока Pages не включён и workflow не завершился успешно, ссылка из `include` не будет доступна.
+
+После этого, когда Marketplace проиндексирует репозиторий:
 
 1. Откройте Marketplace → **Themes**.
 2. Найдите **SteamDiesel — Acoustic Chronograph** и установите тему.
-3. В выборе цветовой схемы установите **Brass** или **RustPatina**.
-4. Откройте Marketplace → **Extensions** и установите **SteamDiesel Living Phonograph**.
+3. В выборе цветовой схемы установите **Brass** или **RustPatina**. Хронограф подключается через `include` темы. Отдельная карточка Living Phonograph в Extensions остаётся доступна для самостоятельной установки и обновления.
 
 Тема и хронограф публикуются отдельными карточками Marketplace, но используют общие цветовые токены. Сам факт наличия Topics ещё не подтверждает, что карточки уже появились в каталоге: Marketplace должен обновить индекс.
 
