@@ -7,9 +7,21 @@
     "schemes": "color.ini",
     "readme": "README.md",
     "authors": [
-      { "name": "vitalijklimenko447-del", "url": "https://github.com/vitalijklimenko447-del" }
+      {
+        "name": "vitalijklimenko447-del",
+        "url": "https://github.com/vitalijklimenko447-del"
+      }
     ],
-    "tags": ["dieselpunk", "steampunk", "industrial", "chronograph", "dark"]
+    "tags": [
+      "dieselpunk",
+      "steampunk",
+      "industrial",
+      "chronograph",
+      "dark"
+    ],
+    "include": [
+      "https://vitalijklimenko447-del.github.io/SteamDiesel_Theme/steamdiesel-chronograph.js"
+    ]
   },
   {
     "name": "SteamDiesel Living Phonograph",
@@ -18,8 +30,16 @@
     "main": "Extensions/steamdiesel-chronograph.js",
     "readme": "Extensions/README.md",
     "authors": [
-      { "name": "vitalijklimenko447-del", "url": "https://github.com/vitalijklimenko447-del" }
+      {
+        "name": "vitalijklimenko447-del",
+        "url": "https://github.com/vitalijklimenko447-del"
+      }
     ],
-    "tags": ["chronograph", "nixie", "player", "dieselpunk"]
+    "tags": [
+      "chronograph",
+      "nixie",
+      "player",
+      "dieselpunk"
+    ]
   }
 ]
