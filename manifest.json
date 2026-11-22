@@ -8,8 +8,8 @@
     "readme": "README.md",
     "authors": [
       {
-        "name": "vitalijklimenko447-del",
-        "url": "https://github.com/vitalijklimenko447-del"
+        "name": "mr-docuforge",
+        "url": "https://github.com/mr-docuforge"
       }
     ],
     "tags": [
@@ -20,7 +20,7 @@
       "dark"
     ],
     "include": [
-      "https://vitalijklimenko447-del.github.io/SteamDiesel_Theme/steamdiesel-chronograph.js"
+      "https://mr-docuforge.github.io/SteamDiesel_Theme/steamdiesel-chronograph.js"
     ]
   },
   {
@@ -31,8 +31,8 @@
     "readme": "Extensions/README.md",
     "authors": [
       {
-        "name": "vitalijklimenko447-del",
-        "url": "https://github.com/vitalijklimenko447-del"
+        "name": "mr-docuforge",
+        "url": "https://github.com/mr-docuforge"
       }
     ],
     "tags": [
