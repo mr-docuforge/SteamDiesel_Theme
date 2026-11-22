@@ -1,0 +1,25 @@
+[
+  {
+    "name": "SteamDiesel — Acoustic Chronograph",
+    "description": "Dieselpunk instrument-panel theme: engraved mechanical blueprint, warm metal, riveted surfaces and two coordinated color schemes — Brass and RustPatina.",
+    "preview": "assets/preview.svg",
+    "usercss": "user.css",
+    "schemes": "color.ini",
+    "readme": "README.md",
+    "authors": [
+      { "name": "vitalijklimenko447-del", "url": "https://github.com/vitalijklimenko447-del" }
+    ],
+    "tags": ["dieselpunk", "steampunk", "industrial", "chronograph", "dark"]
+  },
+  {
+    "name": "SteamDiesel Living Phonograph",
+    "description": "Nixie-style playback chronograph with transport controls. Its finish follows the active SteamDiesel color scheme.",
+    "preview": "assets/preview.svg",
+    "main": "Extensions/steamdiesel-chronograph.js",
+    "readme": "Extensions/README.md",
+    "authors": [
+      { "name": "vitalijklimenko447-del", "url": "https://github.com/vitalijklimenko447-del" }
+    ],
+    "tags": ["chronograph", "nixie", "player", "dieselpunk"]
+  }
+]
